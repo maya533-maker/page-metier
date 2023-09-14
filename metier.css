@@ -1,0 +1,271 @@
+body {
+    font-family:  Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+header {
+    height: 100px;
+    background-color: red;
+    width: 100%;
+    position: fixed;
+}
+
+.accueil_logo_icons {
+    display: flex;
+    /* background-color: green; */
+    background-color: #EDEDED;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.accueil_logo_icons .accueil_logo {
+    width: 20%;
+    /* background-color: red; */
+    /* padding-top: 5px; */
+    padding-top: 0.5%;
+}
+
+/* debut css la premiere partie du header */
+/* css des blocs div qui se trouve dans le div .accueil_logo_icons */
+
+.accueil_logo_icons .accueil_entete {
+    width: 60%;
+    /* background-color: red; */
+    justify-content: space-between;
+}
+
+/* css des blocs div qui se trouve dans le div .accueil_entete */
+.accueil_logo span {
+    font-size: 40px;
+    padding-left: 50%;
+    /* margin-top: 20px; */
+}
+
+.accueil_input {
+    width: 40%;
+    padding-top: 1.5%;
+    display: flex;
+}
+
+.accueil_input input {
+    height: 30px;
+    width: 400px;
+    padding-left: 10px;
+}
+
+
+.accueil_icons {
+    width: 40%;
+    /* background-color: bisque; */
+    padding-top: 2.2%;
+}
+
+.accueil_icons span {
+    border-left: 1px black solid;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.accueil_icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.accueil_entete {
+    display: flex;
+    /* background-color: beige; */
+}
+
+
+/* fin css la premiere partie du header */
+
+
+/* debut css pour la deuxieme partie du header  */
+.accueil_liens {
+    display: flex;
+    /* background-color: blue; */
+    background-color: white;
+    height: 40px;
+    justify-content: space-around;
+    box-shadow: 0px 5px 5px rgb(156, 153, 153);
+}
+
+.accueil_liens .lien {
+    width: 60%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.9%;
+}
+
+.accueil_liens .lien a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.accueil_liens .div_button {
+    width: 20%;
+    /* background-color: bisque; */
+}
+
+.accueil_liens .div_button button {
+    width: 150px;
+    height: 100%;
+    border-radius: 0;
+    border: none;
+    color: white;
+    background-color: black;
+}
+main {
+    padding: 20px;
+    /* height: 50vh;
+    overflow-y: auto; */
+    
+    
+}
+
+.title {
+    background-color:rgb(167, 161, 163);
+    color: #fff;
+    padding: -5px 0;
+    text-align: center;
+}
+
+
+
+.metiers {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+*.metier {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+*.metier img {
+    width: 100%;            
+    max-height: 200px;      
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; 
+    margin-bottom: 15px; 
+    transition: transform 0.3s ease;  
+}
+
+*.metier:hover img {
+    transform: scale(1.1);  
+}
+
+.metier h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+}
+
+*.metier p {
+    margin: 10px 0;
+}
+
+*.metier a {
+    display: inline-block;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.metier a:hover {
+    background-color: rgb(167, 161, 163);
+}
+
+/* debut css pour le footer */
+footer {
+    height: 350px;
+    width: 100%;
+    background-color: #E8E8E8;
+    margin-top: 50px;
+    display: flex;
+    /* padding: 0px 50px; */
+    justify-content: space-evenly;
+    padding-top: 100px;
+}
+
+footer span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    margin: 20px 0;
+}
+
+footer .footer_logo span {
+    font-size: 40px;
+
+}
+
+footer .footer_logo .footer_icons {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+footer .footer_pages,footer .footer_policy,footer .footer_categories,footer .footer_s_inscrire  {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+footer .footer_s_inscrire input {
+    width: 200px;
+    height: 40px;
+    border: none;
+}
+/* footer .footer_s_inscrire .div_input_button input::placeholder{
+    color: black;
+    font-weight: bold;
+   
+} */
+footer .footer_s_inscrire #newsletter_text, footer .footer_s_inscrire input,footer .div_input_button button{
+    margin: 20px 0;
+}
+
+footer .div_input_button{
+    display: flex;
+    /* justify-content: center; */
+    justify-content: start;
+}
+footer .div_input_button button{
+    height: 40px;
+    border: 1px black solid;
+    color: white;
+    background-color: black;
+    padding: 5px;
+
+}
+
+
+#newsletter_text {
+    font-size: 16px;
+}
+@media all and screen and (min-width:768px) and (max-width:992px) {
+
+
+    header{
+      
+        main{
+            flex-flow: row wrap;
+        }
+    
+        
+    }}
+    
+
